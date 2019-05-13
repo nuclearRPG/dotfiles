@@ -1,0 +1,11 @@
+# personal.map
+keymaps 0-255         # suppress the side-effect of Control, see man 5 keymaps
+keycode 58 = Control  # remap Caps_Lock as Control
+keycode 100 = Alt     # virtual console right alt seems have odd behavior using readline
+
+# customized map file only affect the specific ones above.
+# This file should put in /usr/local/share/kbd/keymaps/ although elsewhere is fine.
+# If this location changed, change /etc/vconsole.conf KEYMAP key value.
+
+# sudo loadkeys personal.map, for current boot.
+# /etc/vconsole.conf, for permanent.
